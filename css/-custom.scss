@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width:1170px;
+    height: auto;
+}
+  .wrapper{
+      width: 960px;
+      height: auto;
+      margin: 0 auto;
+    
+  }
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  ul, ol, li {
+    list-style: none;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }/*# sourceMappingURL=styles.css.map */
+  h1,h2,p,a{
+    color: $white;
+  }

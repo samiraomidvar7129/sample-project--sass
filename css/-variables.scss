@@ -1,0 +1,31 @@
+$blue:blue;
+$green:green;
+$red:red;
+$black:rgba(105, 100, 100, 0.3);
+$gray:gray;
+$pink:pink;
+$white:#fff;
+$direction:rtl;
+$flex-direction:column;
+$background-color:rgba(126, 119, 119, 0.2);
+$background-green:green;
+
+
+// fonts variables==============>
+$fonts-path:'../fonts';
+$font-family:'vazir';
+$font-style:normal;
+$font-weight:700;
+$font-size:16px;
+// end variables===============>
+
+@font-face {
+    font-family: $font-family;
+    src: url('#{$fonts-path}/vazir.eot') format('eot');
+    src: url('#{$fonts-path}/vazir.woff') format('woff');
+    src: url('#{$fonts-path}/vazir.woff2') format('woff2');
+    src: url('#{$fonts-path}/vazir.ttf') format('ttf');
+    font-weight: $font-weight;
+    font-style: $font-style;
+
+}

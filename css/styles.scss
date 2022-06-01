@@ -1,0 +1,104 @@
+@import './css/-mixins.scss';
+@import './css/-variables.scss';
+@import './css/-custom.scss';
+@import './css/-extends.scss';
+@import './css/-mixins.scss';
+
+// navbar styles====================>
+body{
+    background-color: rgb(55, 136, 241);
+  font-family: $font-family;
+  text-transform: capitalize;
+}
+#top{
+   .wrapper{
+    nav{
+        width:100%;
+        height: 60px;
+        @include flex(flex,space-around,center);
+        direction: $direction;
+        ul{
+            @include flex(flex,center,center);
+            direction: $direction;
+         li{
+             @include margin-padding(5px,5px,5px,5px,false);
+             @include margin-padding(0,0,0,10px,true);
+             a{
+                 font-size: $font-size;
+                &:hover{
+                    color: $pink;
+                }
+             }
+         }
+        }
+        span{
+            @include margin-padding(0,0,0,-60px,true);
+            h1{
+               font-size: $font-size + 16;
+              
+            }
+        }
+    }
+   }
+}
+
+// end navbar styles=============================>
+// header styles=================================>
+#header{
+    header{
+        .header-content{
+        @include flex(flex,space-around,center);
+        flex-direction: row-reverse;
+        .right-side{
+            
+            @include section-divider(flex, 40%,40%);
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                @include margin-padding(100px,0,0,0,true);
+            }
+        }
+        .left-side{
+            @include section-divider(flex,60%,60%);
+            flex-direction: column;
+        @include flex(flex,space-between,start);
+        height: 100px;
+        h2,p{
+            @include margin-padding(10px,5px,20px,5px,false);
+        }
+            h2{
+                font-size: $font-size + 25;
+            }
+            p{
+                font-weight: $font-weight;
+                font-size: $font-size + 1;
+                text-align: justify;
+                @include margin-padding(0,0,40px,0,false);
+
+            }
+            ul{
+                @include flex(flex,space-around,center);    
+                li{
+                    a{
+                        background-color: $background-green;
+                        @include border-radius(7px,7px,7px,7px);
+                        @include margin-padding(10px,10px,10px,10px,false);
+                        @include margin-padding(0,0,0,10px,true);
+                        transition: 0.2s linear;
+                        &:hover{
+                            background-color: rgb(26, 165, 60);
+                        }
+
+                    }
+                }
+
+            }
+          
+        }
+
+        }
+    }
+}
+
+// end header styles=============================>
